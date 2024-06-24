@@ -1,11 +1,16 @@
 # WiFi-Password-generate
-Generate strong and secure passwords for your WiFi network with this Python-based tool. This project utilizes a simple yet effective algorithm to create randomized passwords that meet common security standards. Whether you're setting up a new router or updating your network credentials, this script ensures your WiFi remains protected.
+This Python script utilizes subprocess module to interact with Windows netsh command-line utility for WiFi management. It retrieves and displays WiFi profiles and passwords stored on a Windows system.
+
 Features:
-Random Password Generation: Creates unique passwords using a combination of letters, digits, and special characters.
-Customizable Parameters: Adjust password length and complexity based on your specific security requirements.
-Easy Integration: Lightweight and straightforward Python script that can be run from any environment with Python installed.
-Secure Connectivity: Helps you maintain privacy and security for your home or office network.
+get_wifi_profiles(): Fetches all WiFi profiles stored on the system.
+get_wifi_password(profile): Retrieves the plaintext password for a given WiFi profile.
+main(): Executes the script, printing each WiFi profile along with its corresponding password.
 Usage:
-Clone the repository to your local machine.
-Run the script and follow the prompts to generate a new WiFi password.
-Apply the generated password to your WiFi router settings.
+Ensure Python is installed on your Windows machine.
+Run the script to see a list of WiFi profiles and their passwords (if available).
+Requirements:
+Python 3.x
+Windows operating system (as it relies on netsh command)
+This script is designed for educational purposes or for retrieving forgotten WiFi passwords from your own Windows machine. Caution: Ensure you have the necessary permissions to access WiFi profile information.
+
+
